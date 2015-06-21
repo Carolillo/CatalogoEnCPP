@@ -6,8 +6,8 @@
  */
  
 #include <iostream>
-#include "Persona.h"
- 
+#include "Enfermero.h"
+
 using namespace std;
  
 Enfermero::Enfermero()

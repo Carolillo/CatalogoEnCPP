@@ -8,6 +8,8 @@
 #ifndef ClinicURJC_Enfermero_H
 #define ClinicURJC_Enfermero_H
 #include <string.h>
+#include "Especialidad.h"
+#include "Persona.h"
 
 class Enfermero: public Persona
 {

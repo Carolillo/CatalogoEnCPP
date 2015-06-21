@@ -10,7 +10,10 @@
 #include "Medico.h"
  
 using namespace std;
- 
+
+const string Medico::Titular = "Titular";
+const string Medico::Interino = "Interino";
+
 Medico::Medico()
 {
 	identificativo = 0;

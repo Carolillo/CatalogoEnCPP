@@ -8,7 +8,7 @@
 #ifndef ClinicURJC_Medico_H
 #define ClinicURJC_Medico_H
 #include <string.h>
-
+#include "Persona.h"
 #include "Especialidad.h"
 
 class Medico: public Persona
@@ -17,8 +17,8 @@ class Medico: public Persona
 		/*Constructor*/
 		Medico();
 
-		const std::string Titular = "Titular";
-		const std::string Interino = "Interino";
+		static const std::string Titular;
+		static const std::string Interino;
 		/*Setters y Getters*/
 		void setEspecialidad(Especialidad);
 		Especialidad getEspecialidad();

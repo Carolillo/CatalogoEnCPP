@@ -9,7 +9,8 @@
 #define ClinicURJC_Paciente_H
 #include <string.h>
 #include <map>
-//#include <vector>
+#include "Especialidad.h"
+#include "Medico.h"
 
 
 class Paciente: public Persona
@@ -18,10 +19,13 @@ class Paciente: public Persona
 	public :
 		/*Constructor*/
 		Paciente();
+		Paciente(std::string, int, Especialidad, Medico);
+		Paciente(std::string, int, std::map<Especialidad, Medico>);
 		
 		/*Setters y Getters*/
 		void addEspecialidad (Especialidad, Medico);
-		std::map<Especialidad, Medico> getEspecialidades ();
+		void addEspecialidades (std::map<Especialidad, Medico>);
+		std::map<Especialidad, Medico> getEspecialidades();
 		/*Shadows*/
 		//getNombre();
 		//getEdad()

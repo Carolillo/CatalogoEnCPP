@@ -15,6 +15,7 @@ class Persona
 	public :
 		/*Constructor*/
 		Persona();
+		Persona(std::string, int);
 
 		/*Setters y Getters*/
 		void setNombre (std::string);

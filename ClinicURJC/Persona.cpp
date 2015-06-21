@@ -15,6 +15,11 @@
 	 setNombre("");
 	 setEdad(0);
  }
+ Persona::Persona(std::string mName, int mEdad)
+ {
+	 nombre = mName;
+	 edad = mEdad;
+ }
  
  std::string Persona::getNombre ()
  {
