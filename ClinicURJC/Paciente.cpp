@@ -43,6 +43,12 @@ void Paciente::addEspecialidades (std::map<Especialidad, Medico> mEspecialidades
 	especialidades = mEspecialidades;
 }
 
+void Paciente::showEspecialidades ()
+{
+	cout << "De momento nada..."
+}
+
+
 std::map<Especialidad, Medico> Paciente::getEspecialidades ()
 {
 	return especialidades;

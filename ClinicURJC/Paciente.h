@@ -25,6 +25,7 @@ class Paciente: public Persona
 		/*Setters y Getters*/
 		void addEspecialidad (Especialidad, Medico);
 		void addEspecialidades (std::map<Especialidad, Medico>);
+		void showEspecialidades ();
 		std::map<Especialidad, Medico> getEspecialidades();
 		/*Shadows*/
 		//getNombre();
