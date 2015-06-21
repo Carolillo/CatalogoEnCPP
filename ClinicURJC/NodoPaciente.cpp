@@ -22,7 +22,7 @@ template<typename Paciente>
 NodoPaciente<Paciente>::NodoPaciente(Paciente data_)
 {
 //    datos = data_;
-	Paciente datos(data_.getNombre(),data_.getEdad(),data_.getEspecialidades())
+	Paciente datos(data_.getNombre(),data_.getEdad())
     next = NULL;
 }
 

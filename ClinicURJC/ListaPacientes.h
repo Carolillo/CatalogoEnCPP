@@ -30,20 +30,12 @@ class ListaPacientes
 
     	void add_head(Paciente);
     	void add_end(Paciente);
-    	void add_sort(Paciente);
-    	void concat(ListaPacientes);
     	void del_all();
-    	void del_by_data(Paciente);
-    	void del_by_position(int);
     	void fill_by_user(int);
-    	void fill_random(int);
-    	void intersection(ListaPacientes);
-    	void invert();
     	void load_file(string);
     	void print();
     	void save_file(string);
     	void search(Paciente);
-    	void sort();
 
 private:
     NodoPaciente<Paciente> *m_head;
