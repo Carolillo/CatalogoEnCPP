@@ -7,6 +7,7 @@
  
  #include <iostream>
  #include "Persona.h"
+ #include <stdafx>
  
  using namespace std;
  
@@ -40,4 +41,3 @@
  {
 	 edad= a;
  }
- 

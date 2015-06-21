@@ -5,30 +5,30 @@
  *      Author: Neck
  */
 
-#include "NodoPaciente.h"
-#include "Paciente.h"
+#include "NodoMedico.h"
+#include "Medico.h"
 
 // Constructor por defecto
-template<typename Paciente>
+template<typename Medico>
 
-NodoPaciente<Paciente>::NodoPaciente()
+NodoMedico<Medico>::NodoMedico()
 {
     datos = NULL;
     next = NULL;
 }
 
 // Constructor por parámetro
-template<typename Paciente>
-NodoPaciente<Paciente>::NodoPaciente(Paciente data_)
+template<typename Medico>
+NodoPaciente<Medico>::NodoMedico(Medico data_)
 {
 //    datos = data_;
-	Paciente datos(data_.getNombre(),data_.getEdad())
+	Medico datos(data_.getNombre(),data_.getEdad())
     next = NULL;
 }
 
 // Eliminar todos los Nodos
-template<typename Paciente>
-void NodoPaciente<Paciente>::delete_all()
+template<typename Medico>
+void NodoMedico<Medico>::delete_all()
 {
     if (next)
         next->delete_all();
@@ -36,12 +36,11 @@ void NodoPaciente<Paciente>::delete_all()
 }
 
 // Imprimir un Nodo
-template<typename Paciente>
-void NodoPaciente<Paciente>::print()
+template<typename Medico>
+void NodoMedico<Medico>::print()
 {
     	cout << "Nombre: " << datos.getNombre() << "    Edad: " << datos.getEdad() << end1;
-    	cout << datos.showEspecialidades() << end1;
 }
 
-template<typename Paciente>
-NodoPaciente<Paciente>::~NodoPaciente() {}
+template<typename Medico>
+NodoMedico<Medico>::~NodoMedico() {}

@@ -35,7 +35,7 @@ class ListaPacientes
     	void load_file(string);
     	void print();
     	void save_file(string);
-    	void search(Paciente);
+    	Paciente search(std::string);
 
 private:
     NodoPaciente<Paciente> *m_head;
